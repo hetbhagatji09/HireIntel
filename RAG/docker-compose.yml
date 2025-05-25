@@ -1,0 +1,16 @@
+services:
+  postgres:
+    container_name: vss-ms-d-pgvector_db
+    image: ankane/pgvector
+    environment:
+      POSTGRES_USER: 'vss-ms-1'
+      POSTGRES_PASSWORD: 'Nost-Noci'
+      POSTGRES_DB: 'vss-ms-db'
+      PGDATA: /var/lib/postgresql/data
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+volumes:
+  pgdata:
