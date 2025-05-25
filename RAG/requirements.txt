@@ -6,8 +6,6 @@ langchain-experimental
 langchain-ollama
 langchain-groq
 
-# Anthropic Integration
-langchain-anthropic
 
 # Google Gemini (PaLM) Integration
 langchain-google-genai
